@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+           
+           function handleloginclick(){
+            const userName= document.getElementById('userName').value;
+            const pass= document.getElementById('pass').value;
+            const apiEndPoint = `http://localhost:8080/login?userName=${userName}&pass=${pass}`;
+            
+            fetch(apiEndPoint).then(response => response.json())
+                .then(data => {
+                    document.getElementById('message').innerHTML = data.message
+                })
+                .catch(error => console.log(error))
+           }
+        </script>
+    </head>
+    <style>
+        .error {
+            color: red;
+        }
+        .success {
+            color: green;
+        }
+    </style>
+    <body>
+        <h1>Login Form <span id="message"></span></h1> 
+        <input type="text" id="userName" name="userName" placeholder="Please enter User Name"/>
+        <input type="password" id="pass" name="password" placeholder="Please enter password"/>
+        <button onclick="handleloginclick()">Login</button>
+    </body>
+</html>

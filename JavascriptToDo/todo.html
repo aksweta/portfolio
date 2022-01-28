@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="todo.css"/>
+    
+</head>
+<body>
+    <header>
+        <h1>Task List 2022</h1>
+    </header>
+         <div class="task-assign">
+            <input type="text" id="task-assign-input" placeholder="Assign Task"/>
+            <input onclick="submitSweta()" type="submit" id="task-assign-Sweta" value="Add Task Sweta"/>
+            <input onclick="submitRoanak()" type="submit" id="task-assign-Ronak" value="Add Task Ronak"/>
+            <input onclick="submitVastal()" type="submit" id="task-assign-Vatsal" value="Add Task Vatsal"/>
+        </div>
+        <main>
+        <div class="flex-container">
+            <section>
+                <h2>Sweta's Tasks</h2>
+                <div id="tasks">
+                    <div class="sweta-tasks" id="swetaList">
+                    </div>
+                </div>
+            </section>
+
+<section>
+    <h2>Ronak's Tasks</h2>
+    <div id="tasks">
+        <div class="ronak-tasks">
+            <input type="text" class="text" value="rrrrrrr" readonly />
+            <div class="actions">
+                <button class="edit">EDIT</button>
+                <button class="delete">DELETE</button>
+            </div>
+
+    </div>
+
+</section>
+
+
+
+
+            <section>
+                <h2>Vatsal's Tasks</h2>
+                <div id="tasks">
+                    <div class="vatsal-tasks">
+                        <input type="text" class="text" value="vvvvvv" readonly />
+                        <div class="actions">
+                            <button class="edit">EDIT</button>
+                            <button class="delete">DELETE</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </main>
+        <script src="todo.js"></script>
+</body>
+</html>

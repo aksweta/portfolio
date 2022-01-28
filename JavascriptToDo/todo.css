@@ -1,0 +1,132 @@
+.flex-container{
+    display: flex;
+    justify-content:space-around;
+}
+
+.sweta-tasks{
+   background-color: #ffc007;
+    width: 300px;
+    height: 500px;
+    padding-top: 30px;
+    padding-left: 30px;
+
+
+}
+
+.ronak-tasks{
+   background-color: #a0d3d8;
+   width: 300px;
+    height: 500px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.vatsal-tasks{
+   background-color: #d899c6;
+   width: 300px;
+   height: 500px;
+   padding-top: 30px;
+   padding-left: 30px;
+}
+
+h2,h1{
+    text-align: center;
+}
+
+main{
+    margin-top: 80px;
+}
+
+#task-assign-Sweta{
+    background-color: #ffc007;
+}
+
+#task-assign-Ronak{
+    background-color: #a0d3d8;
+}
+
+#task-assign-Vatsal{
+    background-color: #d899c6;  
+}
+
+.task-assign{
+    margin-left: 700px;
+}
+
+
+*{
+    font-family: 'fira sans', sans-serif;
+}
+
+body{
+    background-color:grey;
+    color: white;
+}
+
+input,button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#task-assign-Sweta{
+    font-size: 1rem;
+    outline: none;
+    border-radius: 1rem;
+
+}
+
+#task-assign-Ronak{
+    font-size: 1rem;
+    outline: none;
+    border-radius: 1rem;
+}
+
+#task-assign-Vatsal{
+    font-size: 1rem;
+    outline: none;
+    border-radius: 1rem;
+}
+
+#task-assign-input{
+    flex: 1 1 0%;
+    background-color:wheat;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right:1rem ;
+    color: white;
+    font-size: 1.25rem;
+}
+
+
+#task-assign-input::placeholder{
+    color:black;
+}
+
+.text{
+    flex: 1 1 0%;
+    background-color:grey;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom:1rem ;
+    color: white;
+    font-size: 1.25rem;
+}
+
+#tasks .actions{
+    display: flex;
+    margin: 0 0.5rem;
+}
+
+.actions button{
+    cursor: pointer;
+    margin: 0 0.5rem; 
+    font-size: 1.15rem;
+    color: crimson;
+}
+
+#tasks .sweta-tasks .text:not(:read-only){
+    color: indianred;
+}
+
